@@ -5,7 +5,8 @@ Problem Statement: Merge Sort
 Problem Level: MEDIUM
 Problem Description:
 Sort an array A using Merge Sort.
-Change in the input array itself. So no need to return or print anything.
+Change in the input array itself. 
+So no need to return or print anything.
 Input format :
 Line 1 : Integer n i.e. Array size
 Line 2 : Array elements (separated by space)
