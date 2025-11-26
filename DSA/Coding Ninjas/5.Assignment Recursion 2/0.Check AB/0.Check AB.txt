@@ -4,7 +4,8 @@ Chapter Assignment
 Problem Statement: Check AB
 Problem Level: MEDIUM
 Problem Description:
-Suppose you have a string, S, made up of only 'a's and 'b's. Write a recursive function that checks if the string was generated using the following rules:
+Suppose you have a string, S, made up of only 'a's and 'b's. Write a recursive
+function that checks if the string was generated using the following rules:
 a. The string begins with an 'a'
 b. Each 'a' is followed by nothing or an 'a' or "bb"
 c. Each "bb" is followed by nothing or an 'a'
@@ -21,20 +22,116 @@ Constraints :
 where |S| represents length of string S.
 
 Sample Input 1 :
-abb
+ abb
 
 Sample Output 1 :
 true
 
 Sample Input 2 :
-abababa
+ abababa
 
 Sample Output 2 :
+false
+
+Sample Input 3 :
+a
+
+Sample Output 3 :
+true
+
+Sample Input 4 :
+aaa
+
+Sample Output 4 :
+true
+
+Sample Input 5 :
+abba
+
+Sample Output 5 :
+true
+
+Sample Input 6 :
+abbabb
+
+Sample Output 6 :
+true
+
+Sample Input 7 :
+aabbaa
+
+Sample Output 7 :
+true
+
+Sample Input 8 :
+b
+
+Sample Output 8 :
+false
+
+Sample Input 9 :
+ba
+
+Sample Output 9 :
+false
+
+Sample Input 10 :
+bba
+
+Sample Output 10 :
+false
+
+Sample Input 11 :
+ab
+
+Sample Output 11 :
+false
+
+Sample Input 12 :
+abbb
+
+Sample Output 12 :
+false
+
+Sample Input 13 :
+aaabbbbba
+
+Sample Output 13 :
+true
+
+Sample Input 14 :
+(empty string)
+
+Sample Output 14 :
+false
+
+Sample Input 15 :
+aabbaabbaa
+
+Sample Output 15 :
+true
+
+Sample Input 16 :
+abbabba
+
+Sample Output 16 :
+true
+
+Sample Input 17 :
+aabbbbaa
+
+Sample Output 17 :
+false
+
+Sample Input 18 :
+aaabbbaa
+
+Sample Output 18 :
 false
 
 
 
 =====Answer=====
-Correct Option: 
+Correct Option:
 
 @csalgo

@@ -4,9 +4,12 @@ Chapter Assignment
 Problem Statement: Return Permutations - String
 Problem Level: HARD
 Problem Description:
-Given a string S, find and return all the possible permutations of the input string.
+
+Given a string S, find and return all the possible permutations 
+of the input string.
 Note 1 : The order of permutations is not important.
-Note 2 : If original string contains duplicate characters, permutations will also be duplicates.
+Note 2 : If original string contains duplicate characters, 
+permutations will also be duplicates.
 Input Format :
 String S
 
@@ -24,9 +27,95 @@ bca
 cab
 cba
 
+=====Additional Test Cases=====
 
+Test Case 1: Single character
+Input: a
+Output: a
+Expected Permutations: 1
+
+Test Case 2: Two characters
+Input: ab
+Output:
+ab
+ba
+Expected Permutations: 2
+
+Test Case 3: Duplicate characters
+Input: aa
+Output:
+aa
+aa
+Expected Permutations: 2 (both same)
+
+Test Case 4: Three characters with duplicates
+Input: aab
+Output:
+aab
+aba
+aab
+aba
+baa
+baa
+Expected Permutations: 6 (with duplicates)
+
+Test Case 5: Empty string
+Input: (empty string)
+Output: (empty string)
+Expected Permutations: 1
+
+Test Case 6: Four characters
+Input: abcd
+Output: 24 permutations
+abcd, abdc, acbd, acdb, adbc, adcb,
+bacd, badc, bcad, bcda, bdac, bdca,
+cabd, cadb, cbad, cbda, cdab, cdba,
+dabc, dacb, dbac, dbca, dcab, dcba
+Expected Permutations: 24
+
+Test Case 7: All same characters
+Input: aaa
+Output:
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+Expected Permutations: 6 (all same)
+
+Test Case 8: Numbers as string
+Input: 123
+Output:
+123, 132, 213, 231, 312, 321
+Expected Permutations: 6
+
+Test Case 9: Mixed case letters
+Input: Aa
+Output:
+Aa
+aA
+Expected Permutations: 2
+
+Test Case 10: Five characters (stress test)
+Input: abcde
+Expected Permutations: 120 (5!)
+
+Complexity Analysis:
+Time Complexity: O(n! * n) where n is the length of string
+- n! permutations and O(n) to generate each
+Space Complexity: O(n! * n) to store all permutations
+- n! permutations, each of length n
+
+Edge Cases Covered:
+1. Empty string
+2. Single character
+3. Duplicate characters
+4. All same characters
+5. Different character types
+6. Larger strings for performance testing
 
 =====Answer=====
-Correct Option: 
+Correct Option:
 
 @csalgo
