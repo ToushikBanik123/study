@@ -209,3 +209,199 @@ Let's crush these interviews together! 🚀
 ---
 
 *Ready to begin? Just let me know what mode you'd like to start with!*
+
+---
+
+## 📁 Problem Organization System
+
+### Auto-Organization Command: `/organize-problem`
+
+When you provide a problem file (text/PDF/screenshot), I will automatically:
+
+1. **Extract problem details:**
+   - Problem name
+   - Difficulty level (EASY/MEDIUM/HARD)
+   - Problem description
+   - Input/Output format
+   - Constraints
+   - Sample test cases
+
+2. **Create organized folder structure:**
+   ```
+   DSA/coding_ninjas/
+   ├── [category]_[topic]/
+   │   └── [number].[problem_name_snake_case]/
+   │       ├── [number].[Problem Name].txt    # Problem statement
+   │       └── toushik/
+   │           └── ans.cpp                     # Your solution
+   ```
+
+3. **Naming conventions:**
+   - **Category folder:** `{number}.{type}_{topic}` (e.g., `4.assignment_recursion_1b`)
+   - **Problem folder:** `{number}.{problem_name_snake_case}` (e.g., `1.remove_x`)
+   - **Problem file:** `{number}.{Problem Name Title Case}.txt` (e.g., `1.Remove X.txt`)
+   - **Solution folder:** `toushik/`
+   - **Solution file:** `ans.cpp` (or `.java`, `.py` based on preference)
+
+### Problem File Format
+
+Each problem file follows this structure:
+```
+@csalgo
+
+Chapter Assignment
+Problem Statement: [Problem Name]
+Problem Level: [EASY/MEDIUM/HARD]
+Problem Description:
+[Detailed description]
+
+Input format :
+[Input specification]
+
+Output format :
+[Output specification]
+
+Constraints :
+[Constraints]
+
+Sample Input 1 :
+[Example input]
+
+Sample Output 1:
+[Example output]
+
+[Additional test cases...]
+
+=====Answer=====
+Correct Option:
+
+@csalgo
+```
+
+### Usage Examples
+
+**1. Single Problem Organization:**
+```
+User: "Organize this problem: [paste problem or attach file]"
+
+Claude will:
+- Parse the problem
+- Determine appropriate category
+- Create folder structure
+- Generate formatted problem file
+- Set up solution template
+```
+
+**2. Batch Organization:**
+```
+User: "Organize all problems from [source/folder]"
+
+Claude will:
+- Process all problems
+- Auto-categorize by topic
+- Maintain numbering sequence
+- Create complete structure
+```
+
+**3. Add to Existing Category:**
+```
+User: "Add this to recursion_1b: [problem]"
+
+Claude will:
+- Find next available number
+- Create problem folder
+- Maintain category structure
+```
+
+### Category Detection
+
+I automatically detect and organize problems into:
+
+- **Recursion:**
+  - `assignment_recursion_1a` - Basic recursion
+  - `assignment_recursion_1b` - Advanced recursion
+  - `assignment_recursion_2` - Complex recursion, backtracking
+  - `lecture_3_recursion_1` - Recursion fundamentals
+  - `lecture_4_recursion_2` - Advanced topics (merge sort, quick sort, subsets)
+
+- **Arrays:**
+  - `assignment_arrays` - Array manipulation, searching, sorting
+
+- **Tests:**
+  - `test_1` - Practice tests and assessments
+
+### Smart Features
+
+**Auto-numbering:**
+- I maintain sequential numbering within each category
+- Automatically assign next available number
+- Handle gaps in numbering
+
+**Duplicate detection:**
+- Check if problem already exists
+- Suggest merge or create variant
+- Prevent overwriting existing solutions
+
+**Multi-language support:**
+- Default: C++ (`.cpp`)
+- Also supports: Python (`.py`), Java (`.java`)
+- Specify language preference per problem
+
+**Template generation:**
+- Create starter code based on problem
+- Include function signatures
+- Add test case runners
+- Set up main() function
+
+### Quick Commands for Organization
+
+- `/organize-problem` - Organize a single problem
+- `/batch-organize` - Organize multiple problems
+- `/create-category <name>` - Create new category folder
+- `/list-problems [category]` - Show all problems in category
+- `/find-problem <name>` - Search for existing problem
+- `/solution-template <lang>` - Generate solution template
+
+### Example Workflow
+
+```
+1. User: "Organize this: Remove all 'x' from string recursively"
+
+2. Claude analyzes:
+   - Topic: String manipulation + Recursion
+   - Category: assignment_recursion_1b
+   - Difficulty: MEDIUM
+   - Next number: 1
+
+3. Claude creates:
+   DSA/coding_ninjas/4.assignment_recursion_1b/1.remove_x/
+   ├── 1.Remove X.txt
+   └── toushik/
+       └── ans.cpp
+
+4. Claude generates problem file with:
+   - Formatted problem statement
+   - Test cases
+   - Constraints
+
+5. Claude creates solution template:
+   - Basic C++ structure
+   - Function signature
+   - Test runner
+```
+
+### Integration with Interview Modes
+
+When practicing:
+- Use organized problems for mock interviews
+- Track which problems you've solved
+- Review solutions from organized folders
+- Generate progress reports by category
+
+**Command:** `/interview-from-category <category>`
+- Picks random unsolved problem from category
+- Conducts full interview
+- Saves your solution to correct folder
+- Updates progress tracker
+
+---

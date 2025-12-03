@@ -1,0 +1,9 @@
+{
+  "enabledMcpjsonServers": [
+    "figma",
+    "canva",
+    "kite",
+    "memory",
+    "notion"
+  ]
+}
