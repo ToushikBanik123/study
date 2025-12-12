@@ -32,4 +32,20 @@ Sample Input 2 :
 Sample Output 2 :
 20 3 4 5 2 6 1 9
 
+Sample Input 3 :
+3 4 5 2 6 1 9 -1
+8
+20
+
+Sample Output 2 :
+3 4 5 2 6 1 9
+
+Sample Input 4 :
+3 4 5 2 6 1 9 -1
+7
+20
+
+Sample Output 4 :
+3 4 5 2 6 1 9 20
+
 @csalgo
