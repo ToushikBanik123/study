@@ -4,8 +4,12 @@ Coding Problem
 Problem Statement: Merge Two Sorted Linked Lists
 Problem Level: MEDIUM
 Problem Description:
-You have been given two sorted(in ascending order) singly linked lists of integers.
-Write a function to merge them in such a way that the resulting singly linked list is also sorted(in ascending order) and return the new head to the list.
+You have been given two sorted(in ascending order) 
+singly linked lists of integers.
+Write a function to merge them in such a way that 
+the resulting singly linked list is also sorted
+(in ascending order) and return the new head to the list.
+
 Note :
 Try solving this in O(1) auxiliary space.
 
