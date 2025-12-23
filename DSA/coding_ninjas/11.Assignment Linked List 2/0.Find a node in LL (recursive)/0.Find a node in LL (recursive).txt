@@ -4,23 +4,32 @@ Chapter Assignment
 Problem Statement: Find a node in LL (recursive)
 Problem Level: EASY
 Problem Description:
-Given a singly linked list of integers and an integer n, find and return the index for the first occurrence of 'n'  in the linked list. -1 otherwise.
+Given a singly linked list of integers and an integer n,
+find and return the index for the first occurrence of 'n'  
+in the linked list. -1 otherwise.
 Follow a recursive approach to solve this.
 Note :
 Assume that the Indexing for the linked list always starts from 0.
 
 Input format :
-The first line contains an Integer 't' which denotes the number of test cases or queries to be run. Then the test cases follow.
+The first line contains an Integer 't' which denotes the 
+number of test cases or queries to be run. 
+Then the test cases follow.
 
-The first line of each test case or query contains the elements of the singly linked list separated by a single space.
+The first line of each test case or query contains the 
+elements of the singly linked list separated by a single space.
 
-The second line of input contains a single integer depicting the value of 'n'.
+The second line of input contains a single integer depicting 
+the value of 'n'.
 
 Remember/Consider :
-While specifying the list elements for input, -1 indicates the end of the singly linked list and hence, would never be a list element
+While specifying the list elements for input, -1 
+ndicates the end of the singly linked list and hence, 
+would never be a list element
 
 Output format :
-For each test case/query, print the elements of the updated singly linked list.
+For each test case/query, print the elements of 
+the updated singly linked list.
 
 Output for every test case will be printed in a seperate line.
 
