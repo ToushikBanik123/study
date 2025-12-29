@@ -6,7 +6,8 @@ Problem Level: MEDIUM
 Problem Description:
 Given a singly linked list of integers, sort it using 'Bubble Sort.'
 Note :
-No need to print the list, it has already been taken care. Only return the new head to the list.
+No need to print the list, it has already been taken care. 
+Only return the new head to the list.
 
 Input format :
 The first line contains an Integer 't' which denotes the number of test cases or queries to be run. Then the test cases follow.
