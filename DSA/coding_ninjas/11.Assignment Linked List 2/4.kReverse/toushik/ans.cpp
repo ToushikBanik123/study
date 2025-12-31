@@ -38,3 +38,37 @@ void printLL(Node * head){
         head = head->next;
     }
 }
+
+
+Node * revrceLL(Node* head, int k){
+    if (k <= 0 || head == NULL)
+    return head;
+
+    Node * Rh = NULL;
+    Node * ptr = head;
+    int count = k;
+
+    while(ptr && count){
+        Node * temp = ptr->next;
+        ptr->next = Rh;
+        Rh = ptr;
+        ptr = temp;
+        count--;
+    }
+
+    //Base Case
+    if(ptr != NULL) head->next = revrceLL(ptr,k);
+    return Rh;
+}
+
+
+int main(){
+    Node * head = takeLLInput();
+    int n; 
+
+    cout << "Enter the value of n : ";
+    cin >> n;
+    head = revrceLL(head,n);
+    printLL(head);
+    return 0;
+}
