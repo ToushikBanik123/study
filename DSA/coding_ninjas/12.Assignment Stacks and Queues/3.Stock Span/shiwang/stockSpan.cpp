@@ -3,53 +3,46 @@
 #include <vector>
 using namespace std;
 
-void stockSpan(vector<int> &stockPrice, vector<int> &result) {
-  stack<int> s1;
-  int count = 0;
-  int maxCount = 0;
-  int currMaxPrice = stockPrice[0];
-  int maxPrice = stockPrice[0];
+vector<int> stockSpan(vector<int> &stockPrices) {
+  stack<int> stockPriceIdxs;
+  vector<int> result;
 
-  for (int i = 0; i < stockPrice.size(); i++) {
-    if (!s1.empty() && stockPrice[i] <= s1.top()) {
-      while (!s1.empty()) {
-        s1.pop();
-        count++;
-        maxCount++;
-      }
-      maxPrice = max(maxPrice, currMaxPrice);
-      currMaxPrice = stockPrice[i];
-    }
-    s1.push(stockPrice[i]);
-    if (maxPrice < stockPrice[i]) {
-      result.push_back(maxCount + s1.size());
-    } else if (currMaxPrice < stockPrice[i]) {
-      currMaxPrice = stockPrice[i];
-      result.push_back(count + s1.size());
+  for (int i = 0; i < stockPrices.size(); i++) {
+    int count = 1;
+
+    if (stockPriceIdxs.empty() ||
+        stockPrices[i] <= stockPrices[stockPriceIdxs.top()]) {
+      result.push_back(1);
     } else {
-      result.push_back(s1.size());
+      while (!stockPriceIdxs.empty() &&
+             stockPrices[i] > stockPrices[stockPriceIdxs.top()]) {
+        count += result[stockPriceIdxs.top()];
+        stockPriceIdxs.pop();
+      }
+      result.push_back(count);
     }
-    count = 0;
+    stockPriceIdxs.push(i);
   }
+
+  return result;
 }
 
 int main() {
 
+  vector<int> stockPrices;
+
   int n;
   cin >> n;
-  vector<int> stockPrice;
-  vector<int> result;
 
   for (int i = 0; i < n; i++) {
     int data;
     cin >> data;
-
-    stockPrice.push_back(data);
+    stockPrices.push_back(data);
   }
 
-  stockSpan(stockPrice, result);
+  vector<int> result = stockSpan(stockPrices);
 
-  for (auto item : result) {
-    cout << item << " ";
+  for (int i = 0; i < n; i++) {
+    cout << result[i] << " ";
   }
 }
