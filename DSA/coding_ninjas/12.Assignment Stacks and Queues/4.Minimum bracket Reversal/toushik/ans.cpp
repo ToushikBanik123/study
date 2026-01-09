@@ -53,7 +53,11 @@ int main(){
     string str;
     cout << "Enter the value of your string  : ";
     cin >> str;
-    stack<char> storage = removeAllTheBalancedOne(str);
-    cout << findRequareCount(storage);
+    if(str.length()%2 != 0){
+        cout << -1;
+    }else{
+        stack<char> storage = removeAllTheBalancedOne(str);
+        cout << findRequareCount(storage);
+    }
     return 0;
 }
