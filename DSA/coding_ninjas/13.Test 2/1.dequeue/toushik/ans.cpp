@@ -16,19 +16,24 @@ class Node{
 
 class Dequeue{
     int size;
+    Node * head; 
+    Node * tale;
+
     public: 
     //1. constructor
-    Dequeue(int size = 10){
+    Dequeue(){
         //You need to create the appropriate constructor.
         //Size for the queue passed is 10.
-        this ->size = size;
+        this ->size = 0;
+        this->head = NULL;
+        this->tale = NULL;
     }
     //2. insertFront
     void insertFront(int data){
         //This function takes an element as input and insert the element at 
         //the front of queue. Insert the element only if queue is not full. 
         //And if queue is full, print -1 and return.
-
+        
     }
     //3. insertRear
     void insertRear(int data){
