@@ -4,25 +4,35 @@ Chapter Assignment
 Problem Statement: Reverse Queue
 Problem Level: EASY
 Problem Description:
-You have been given a queue that can store integers as the data. You are required to write a function that reverses the populated queue itself without using any other data structures.
+You have been given a queue that can store integers as the data. 
+You are required to write a function that reverses the populated 
+queue itself without using any other data structures.
 Example:
 
 
 Input Format:
-The first list of input contains an integer 't' denoting the number of test cases/queries to be run.
+The first list of input contains an integer 't' denoting the number 
+of test cases/queries to be run.
 Then the test cases follow.
 
-The first line input for each test case/query contains an integer N, denoting the total number of elements in the queue.
+The first line input for each test case/query contains an integer 
+N, denoting the total number of elements in the queue.
 
-The second line of input contains N integers separated by a single space, representing the order in which the elements are enqueued into the queue.
+The second line of input contains N integers separated by a 
+single space, representing the order in which the elements 
+are enqueued into the queue.
 
 Output Format:
-For each test case/query, the only line of output prints the order in which the queue elements are dequeued, all of them separated by a single space.
+For each test case/query, the only line of output prints 
+the order in which the queue elements are dequeued, all
+of them separated by a single space.
 
 Output for every test case/query will be printed on a new line.
 
 Note:
-You are not required to print the expected output explicitly, it has already been taken care of. Just make the changes in the input queue itself.
+You are not required to print the expected output explicitly, 
+it has already been taken care of. Just make the changes in 
+the input queue itself.
 
 Constraints:
 1 <= t <= 100

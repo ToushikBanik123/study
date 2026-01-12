@@ -3,7 +3,8 @@
 Assignment Problem
 Problem Name: Correct Order
 Problem Description:
-If the elements “p”, “q”, “r” and “s” are placed in a stack and are deleted one at a time, in what order will they be removed?
+If the elements “p”, “q”, “r” and “s” are placed in a stack and are deleted one at a time, in what order will they 
+be removed?
 Options:
 0. srqp
 1. pqrs

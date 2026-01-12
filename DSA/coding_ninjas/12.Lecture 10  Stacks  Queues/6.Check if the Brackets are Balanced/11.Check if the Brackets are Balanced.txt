@@ -4,23 +4,31 @@ Coding Problem
 Problem Statement: Check if the Brackets are Balanced
 Problem Level: MEDIUM
 Problem Description:
-For a given a string expression containing only round brackets or parentheses, check if they are balanced or not. Brackets are said to be balanced if the bracket which opens last, closes first.
+For a given a string expression containing only round 
+brackets or parentheses, check if they are balanced or not. 
+Brackets are said to be balanced if the bracket which opens 
+last, closes first.
 Example:
 Expression: (()())
-Since all the opening brackets have their corresponding closing brackets, we say it is balanced and hence the output will be, 'true'.
+Since all the opening brackets have their corresponding 
+closing brackets, we say it is balanced and hence the 
+output will be, 'true'.
 
-You need to return a boolean value indicating whether the expression is balanced or not.
+You need to return a boolean value indicating whether 
+the expression is balanced or not.
 Note:
 The input expression will not contain spaces in between.
 
 Input Format:
-The first and the only line of input contains a string expression without any spaces in between.
+The first and the only line of input contains a 
+string expression without any spaces in between.
 
 Output Format:
 The only line of output prints 'true' or 'false'.
 
 Note:
-You don't have to print anything explicitly. It has been taken care of. Just implement the function.
+You don't have to print anything explicitly. 
+It has been taken care of. Just implement the function.
 
 Constraints:
 1 <= N <= 10^7

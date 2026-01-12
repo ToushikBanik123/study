@@ -13,6 +13,6 @@ Options:
 
 
 =====Answer=====
-Correct Option: 3
+Correct Option: 3 & 2
 
 @csalgo
