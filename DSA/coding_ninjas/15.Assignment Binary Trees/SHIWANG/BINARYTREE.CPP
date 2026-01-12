@@ -127,6 +127,18 @@ template <typename T> void inOrderTraversal(BinaryTree<T> *root) {
     inOrderTraversal<T>(root->right);
 }
 
+pair<int, int> diameterOfTree(BinaryTree<int> *root) {
+  if (root == NULL)
+    return {0, 0};
+
+  auto left = diameterOfTree(root->left);
+  auto right = diameterOfTree(root->right);
+
+  int height = 1 + max(left.first, right.first);
+  int diameter = max(left.first + right.first, max(left.second, right.second));
+  return {height, diameter};
+}
+
 int main() {
   // 	BinaryTree<int>* root = takeInput<int>();
   BinaryTree<int> *root = takeInputByLevel<int>();
