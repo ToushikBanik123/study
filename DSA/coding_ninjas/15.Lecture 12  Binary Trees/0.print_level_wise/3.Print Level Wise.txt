@@ -4,7 +4,8 @@ Coding Problem
 Problem Statement: Print Level Wise
 Problem Level: MEDIUM
 Problem Description:
-For a given a Binary Tree of type integer, print the complete information of every node, when traversed in a level-order fashion.
+For a given a Binary Tree of type integer, 
+print the complete information of every node, when traversed in a level-order fashion.
 To print the information of a node with data D, you need to follow the exact format :
 
            D:L:X,R:Y

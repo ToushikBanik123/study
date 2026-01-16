@@ -13,7 +13,30 @@ class TreeNode{
     }
 };
 
-class H
+template <typename T>
+class Highest{
+    public:
+    T highest;
+    T secondHighest;
+    Highest(T data){
+        this->highest = data;
+        this->secondHighest = 0;
+    }
+    void updateWithVal(T data){
+        if(data > this->highest){
+            this->secondHighest = this->highest;
+            this->highest = data;
+        }else if(data > this->secondHighest && data < this->highest){
+            this->secondHighest = data;
+        }
+    }
+
+    void hupdateWithNode(Highest<T> &h){
+        updateWithVal(h.highest);
+        updateWithVal(h.secondHighest);
+    }
+
+};
 
 template <typename T>
 TreeNode<T> * takeInput(){
@@ -43,19 +66,20 @@ TreeNode<T> * takeInput(){
 }
 
 template <typename T>
-    TreeNode<T> * findTheSecorLargest(TreeNode<T> * rootNode, int x){
-    return rootNode;
+    Highest<T> findTheSecorLargest(TreeNode<T> * rootNode){
+    Highest<T> h = Highest<T>(rootNode->data);
+
+    for(int i = 0; i < rootNode->child.size(); i++){
+        Highest<T> childh = findTheSecorLargest<T>(rootNode->child[i]);
+        h.hupdateWithNode(childh);
+    }
+    return h;
 }
 
 
 int main(){
     cout << "Enter the Tree Value : ";
     TreeNode<int> * rootNode = takeInput<int>();
-
-    int x;
-    cout <<"Enter the value (x) : ";
-    cin >> x;
-
-    cout << findTheSecorLargest(rootNode,x)->data;
+    cout << findTheSecorLargest<int>(rootNode).secondHighest;
     return 0;
 }
