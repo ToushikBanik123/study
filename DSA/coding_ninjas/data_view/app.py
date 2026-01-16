@@ -36,10 +36,16 @@ def get_solved_counts():
     return counts
 
 def has_valid_files(directory):
-    """Check if directory contains any file other than .DS_Store"""
+    """Check if directory contains any valid source code file"""
+    VALID_EXTENSIONS = {'.cpp', '.c', '.cc', '.cxx', '.py', '.java', '.js', '.ts'}
     try:
         for item in os.listdir(directory):
-            if item != '.DS_Store' and not item.startswith('.'):
+            # Ignore hidden files
+            if item.startswith('.'):
+                continue
+            
+            # Check for valid extensions
+            if any(item.lower().endswith(ext) for ext in VALID_EXTENSIONS):
                 return True
     except OSError:
         pass
