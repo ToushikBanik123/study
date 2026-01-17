@@ -4,8 +4,11 @@ Coding Problem
 Problem Statement: Print Level Wise
 Problem Level: MEDIUM
 Problem Description:
-For a given a Binary Tree of type integer, print the complete information of every node, when traversed in a level-order fashion.
-To print the information of a node with data D, you need to follow the exact format :
+For a given a Binary Tree of type integer, 
+print the complete information of every node, 
+when traversed in a level-order fashion.
+To print the information of a node with data D, 
+you need to follow the exact format :
 
            D:L:X,R:Y
 
@@ -15,7 +18,8 @@ Print -1 if the child doesn't exist.
 
 Example:
 
-For the above depicted Binary Tree, the level order travel will be printed as followed:
+For the above depicted Binary Tree, the level order travel 
+will be printed as followed:
 
 1:L:2,R:3
 2:L:4:,R:-1
@@ -25,13 +29,19 @@ For the above depicted Binary Tree, the level order travel will be printed as fo
 6:L:-1:,R:-1
 7:L:-1:,R:-1
 
-Note: There is no space in between while printing the information for each node.
+Note: There is no space in between while printing 
+the information for each node.
 
 Input Format:
-The first and the only line of input will contain the node data, all separated by a single space. Since -1 is used as an indication whether the left or right node data exist for root, it will not be a part of the node data.
+The first and the only line of input will contain 
+the node data, all separated by a single space. Since -1 
+is used as an indication whether the left or right 
+node data exist for root, it will not be a part of the node data.
 
 Output Format:
-Information of all the nodes in the Binary Tree will be printed on a different line where each node will follow a format of D:L:X,R:Y, without any spaces in between.
+Information of all the nodes in the Binary Tree 
+will be printed on a different line where each node 
+will follow a format of D:L:X,R:Y, without any spaces in between.
 
 Constraints:
 1 <= N <= 10^5

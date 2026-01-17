@@ -4,7 +4,8 @@ Coding Problem
 Problem Statement: Height Of Tree
 Problem Level: EASY
 Problem Description:
-For a given Binary Tree of integers, find and return the height of the tree.
+For a given Binary Tree of integers, find and return the 
+height of the tree.
 Example:
                         10
                       /      \
@@ -14,16 +15,20 @@ Example:
 
 Height of the given tree is 3.
 
-Height is defined as the total number of nodes along the longest path from the root to any of the leaf node.
+Height is defined as the total number of nodes 
+along the longest path from the root to any of the leaf node.
 
 Input Format:
-The first and the only line of input will contain the node data, all separated by a single space. Since -1 is used as an indication whether the left or right node data exist for root, it will not be a part of the node data.
+The first and the only line of input will contain the node data, 
+all separated by a single space. Since -1 is used as an indication whether the left or right node data exist for root, it will not be a part of the node data.
 
 Output Format:
-The first and the only line of output prints the height of the given binary tree.
+The first and the only line of output prints the height 
+of the given binary tree.
 
 Note:
-You are not required to print anything explicitly. It has already been taken care of.
+You are not required to print anything explicitly. 
+It has already been taken care of.
 
 Constraints:
 0 <= N <= 10^5

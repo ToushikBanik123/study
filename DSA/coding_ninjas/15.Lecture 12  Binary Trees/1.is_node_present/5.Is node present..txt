@@ -4,15 +4,19 @@ Coding Problem
 Problem Statement: Is node present?
 Problem Level: EASY
 Problem Description:
-For a given Binary Tree of type integer and a number X, find whether a node exists in the tree with data X or not.
+For a given Binary Tree of type integer and a number X, 
+find whether a node exists in the tree with data X or not.
 Input Format:
-The first and the only line of input will contain the node data, all separated by a single space. Since -1 is used as an indication whether the left or right node data exist for root, it will not be a part of the node data.
+The first and the only line of input will contain the 
+node data, all separated by a single space. Since -1 
+is used as an indication whether the left or right node data exist for root, it will not be a part of the node data.
 
 Output Format:
 The only line of output prints 'true' or 'false'.
 
 Note:
-You are not required to print anything explicitly. It has already been taken care of.
+You are not required to print anything explicitly. 
+It has already been taken care of.
 
 Constraints:
 1 <= N <= 10^5
