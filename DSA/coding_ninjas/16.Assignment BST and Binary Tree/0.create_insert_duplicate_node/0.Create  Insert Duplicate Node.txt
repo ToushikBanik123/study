@@ -1,7 +1,7 @@
 @csalgo
 
 Chapter Assignment
-Problem Statement: Create  Insert Duplicate Node
+Problem Statement: Create  Insert Duplicate.  Node
 Problem Level: EASY
 Problem Description:
 For a given a Binary Tree of type integer, duplicate every node of the tree and attach it to the left of itself.

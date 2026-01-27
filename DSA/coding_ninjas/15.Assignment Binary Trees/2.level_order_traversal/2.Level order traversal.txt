@@ -4,10 +4,15 @@ Chapter Assignment
 Problem Statement: Level order traversal
 Problem Level: EASY
 Problem Description:
-For a given a Binary Tree of type integer, print it in a level order fashion where each level will be printed on a new line. Elements on every level will be printed in a linear fashion and a single space will separate them.
+For a given a Binary Tree of type integer, 
+print it in a level order fashion where each 
+level will be printed on a new line. Elements 
+on every level will be printed in a linear fashion and 
+a single space will separate them.
 Example:
 
-For the above-depicted tree, when printed in a level order fashion, the output would look like:
+For the above-depicted tree, when printed in a level order fashion, 
+the output would look like:
 
 10
 20 30 
@@ -15,7 +20,10 @@ For the above-depicted tree, when printed in a level order fashion, the output w
 Where each new line denotes the level in the tree.
 
 Input Format:
-The first and the only line of input will contain the node data, all separated by a single space. Since -1 is used as an indication whether the left or right node data exist for root, it will not be a part of the node data.
+The first and the only line of input will contain 
+the node data, all separated by a single space. Since -1 
+is used as an indication whether the left or right node data exist 
+for root, it will not be a part of the node data.
 
 Output Format:
 The given input tree will be printed in a level order fashion where each level will be printed on a new line. 
