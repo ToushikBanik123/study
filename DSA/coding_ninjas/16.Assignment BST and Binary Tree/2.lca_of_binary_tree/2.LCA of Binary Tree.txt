@@ -4,8 +4,12 @@ Chapter Assignment
 Problem Statement: LCA of Binary Tree
 Problem Level: MEDIUM
 Problem Description:
-Given a binary tree and two nodes, find LCA (Lowest Common Ancestor) of the given two nodes in Binary Tree. Read about LCA if you are having doubts about the definition.
-If out of 2 nodes only one node is present, return that node.
+Given a binary tree and two nodes, find LCA 
+(Lowest Common Ancestor) of the given two nodes 
+in Binary Tree. Read about LCA if you are having 
+doubts about the definition.
+If out of 2 nodes only one node is present, return that 
+node.
 If both are not present, return -1.
 Input format :
 Line 1 :  Elements in level order form (separated by space)

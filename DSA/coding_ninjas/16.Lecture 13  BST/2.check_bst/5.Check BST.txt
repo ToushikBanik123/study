@@ -4,10 +4,14 @@ Coding Problem
 Problem Statement: Check BST
 Problem Level: MEDIUM
 Problem Description:
-Given a binary tree with N number of nodes, check if that input tree is BST (Binary Search Tree) or not. If yes, return true, return false otherwise.
+Given a binary tree with N number of nodes, 
+check if that input tree is BST (Binary Search Tree) 
+or not. If yes, return true, return false otherwise.
 Duplicate elements should be in right subtree.
 Input format :
-Line 1 : Nodes in level order form (separated by space). If any node does not have left or right child, take -1 in its place
+Line 1 : Nodes in level order form (separated by space). 
+If any node does not have left or right child, 
+take -1 in its place
 
 Output format :
 true or false
