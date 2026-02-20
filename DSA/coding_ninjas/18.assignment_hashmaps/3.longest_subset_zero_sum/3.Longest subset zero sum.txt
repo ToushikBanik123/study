@@ -4,7 +4,8 @@ Chapter Assignment
 Problem Statement: Longest subset zero sum
 Problem Level: MEDIUM
 Problem Description:
-Given an array consisting of positive and negative integers, find the length of the longest subarray whose sum is zero.
+Given an array consisting of positive and negative integers,
+find the length of the longest subarray whose sum is zero.
 Input Format:
 The first line of input contains an integer, that denotes the value of the size of the array. Let us denote it with the symbol N.
 The following line contains N space separated integers, that denote the value of the elements of the array.

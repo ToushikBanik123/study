@@ -4,12 +4,17 @@ Chapter Assignment
 Problem Statement: Extract Unique characters
 Problem Level: EASY
 Problem Description:
-Given a string S, you need to remove all the duplicates. That means, the output string should contain each character only once. The respective order of characters should remain same, as in the input string.
+Given a string S, you need to remove all the duplicates. 
+That means, the output string should contain each character only once. 
+The respective order of characters should remain same, 
+as in the input string.
 Input format:
-The first and only line of input contains a string, that denotes the value of S.
+The first and only line of input contains a string,
+that denotes the value of S.
 
 Output format :
-The first and only line of output contains the updated string, as described in the task.
+The first and only line of output contains the updated string, 
+as described in the task.
 
 Constraints :
 0 <= Length of S <= 10^8
