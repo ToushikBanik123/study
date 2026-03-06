@@ -16,6 +16,32 @@ vector<T> takeVectorInput(){
     }
     return ans;
 }
+
+template <typename T>
+unordered_set<T> vectorToSet(vector<T> &inputVect){
+    unordered_set<T> ansSet;
+    for(int i = 0; i < inputVect.size(); i++){
+        ansSet.insert(inputVect[i]);
+    }
+    return ansSet;
+}
+
+template <typename T>
+bool lowerIndexAvailable(T i, unordered_set<T> &inputSet){
+    if(inputSet.find(i-1) != inputSet.end()){
+        return 1;
+    }
+    return 0;
+}
+
+template <typename T>
+T findTheEndIndex(T si, unordered_set<T> &inputSet){
+    T ei = si + 1;
+    while(inputSet.find(ei) != inputSet.end()){
+        ei++;
+    }
+    return ei -1;
+}
                                                                                
 int main(){
     vector<int> inputVect = takeVectorInput<int>();
@@ -25,11 +51,11 @@ int main(){
     int maxLength = -1;
     pair<int,int> output = {-1,-1};
     for(int i = 0; i < inputVect.size(); i++){
-        if(lowerIndexAvailable(inputVect[i],inputSet)){
+        if(lowerIndexAvailable<int>(inputVect[i],inputSet)){
             continue;
         }
         int si = inputVect[i];
-        int ei = findTheEnd(si,inputSet);
+        int ei = findTheEndIndex<int>(si,inputSet);
         if(maxLength < (ei-si)){
             maxLength = (ei-si);
             output.first = si;

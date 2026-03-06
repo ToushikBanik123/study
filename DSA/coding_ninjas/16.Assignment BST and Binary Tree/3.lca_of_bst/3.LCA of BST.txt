@@ -9,7 +9,7 @@ Given a binary search tree and two nodes, find
 nodes in the BST.
 LCA
 LCA of two nodes A and B is the lowest or deepest 
-node which has both A and B as its descendants.
+node which has both A and B as its descendants. 
 
 Example:
 In this example, the green coloured 

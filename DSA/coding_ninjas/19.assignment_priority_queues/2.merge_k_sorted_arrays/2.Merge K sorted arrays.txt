@@ -4,7 +4,11 @@ Chapter Assignment
 Problem Statement: Merge K sorted arrays
 Problem Level: MEDIUM
 Problem Description:
-Given k different arrays, which are sorted individually (in ascending order). You need to merge all the given arrays such that output array should be sorted (in ascending order).
+Given k different arrays, 
+which are sorted individually 
+(in ascending order). 
+You need to merge all the given arrays such 
+that output array should be sorted (in ascending order).
 Hint : Use Heaps.
 Input Format :
 Line 1 : Integer K

@@ -4,15 +4,20 @@ Chapter Assignment
 Problem Statement: Running median
 Problem Level: HARD
 Problem Description:
-You are given a stream of N integers. For every i-th integer added to the running list of integers, print the resulting median.
+You are given a stream of N integers. 
+For every i-th integer added to the running list of integers, 
+print the resulting median.
 Print only the integer part of the median.
 Input Format :
-The first line of input contains an integer N, denoting the number of integers in the stream.
+The first line of input contains an integer N, 
+denoting the number of integers in the stream.
 
-The second line of input contains 'N' integers separated by a single space.
+The second line of input contains 'N' 
+integers separated by a single space.
 
 Output Format :
-Print the running median for every integer added to the running list on a new line.
+Print the running median for every integer 
+added to the running list on a new line.
 
 Input Constraints
 1 <= N <= 10^5

@@ -18,7 +18,8 @@ The following line contains an integer,
 that denotes the value of K.
 
 Output format :
-The first and only line of output contains count of all such pairs which have an absolute difference of K.
+The first and only line of output contains count 
+of all such pairs which have an absolute difference of K.
 
 Constraints :
 0 <= n <= 10^4
